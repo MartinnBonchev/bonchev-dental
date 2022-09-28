@@ -4,6 +4,7 @@ import { DefaultSeo } from "next-seo";
 import type { ReactElement, ReactNode } from "react";
 import type { AppProps } from "next/app";
 import type { NextPage } from "next";
+import { MantineProvider } from "@mantine/core";
 
 import defaultSEOProps from "@root/next-seo.config";
 import "@styles/globals.scss";
@@ -29,7 +30,9 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
         />
       </Head>
       <DefaultSeo {...defaultSEOProps} />
-      {getLayout(<Component {...pageProps} />)}
+      <MantineProvider withGlobalStyles withNormalizeCSS>
+        {getLayout(<Component {...pageProps} />)}
+      </MantineProvider>
     </>
   );
 }
