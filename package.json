@@ -32,7 +32,15 @@
     "storybook:build": "build-storybook -s public"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@mantine/core": "^5.4.1",
+    "@mantine/dates": "^5.4.1",
+    "@mantine/form": "^5.4.1",
+    "@mantine/hooks": "^5.4.1",
+    "@mantine/modals": "^5.4.1",
+    "@mantine/notifications": "^5.4.1",
     "@next/bundle-analyzer": "^12.2.5",
+    "dayjs": "^1.11.5",
     "next": "12.2.5",
     "next-seo": "^5.5.0",
     "react": "18.2.0",
